@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 //h1
 export const Heading1 = styled.h1`
-  font-size: 61px;
+  font-size: 48px;
   letter-spacing: -1px;
 `;
 
@@ -26,13 +26,14 @@ export const Container = styled.div`
 
 //header
 export const Navbar = styled.nav`
-  height: 110px;
+  height: 60px;
   width: 90%;
   max-width: 900px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid #f0f0f0;
   margin-bottom: 32px;
   ul {
     display: flex;
@@ -43,7 +44,11 @@ export const Navbar = styled.nav`
       }
       a {
         text-decoration: none;
-        color: inherit;
+        color: ${props => props.theme.colors.text};
+        transition: color 0.1s linear;
+        &:hover {
+          color: black;
+        }
       }
     }
   }
