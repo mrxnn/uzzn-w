@@ -1,10 +1,10 @@
 import Link from 'next/link';
-import { Navbar, Heading3 } from '../styles/components';
+import { Navbar, Logo, Button } from '../styles/components';
 
 export default function Header() {
   return (
     <Navbar>
-      <Heading3>Brannd</Heading3>
+      <Logo>Brand</Logo>
       <ul>
         <li>
           <Link href="/showcase"><a>Showcase</a></Link>
@@ -17,6 +17,9 @@ export default function Header() {
         </li>
         <li>
           <Link href="/analytics"><a>Analytics</a></Link>
+        </li>
+        <li>
+          <Button>Sign Up</Button>
         </li>
       </ul>
     </Navbar>

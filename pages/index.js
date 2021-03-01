@@ -1,13 +1,13 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Header from '../components/Header';
-import { Container, Heading1, Text } from '../styles/components';
+import { Container, Heading1, Heading3, Text } from '../styles/components';
 
 export default function Home() {
   return (
     <div>
       <Head>
-        <title>KNWNW</title>
+        <title>Branndland</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
