@@ -7,7 +7,7 @@ const Globalstyle = createGlobalStyle`
     box-sizing: border-box;
   }
   body {
-    font-family: Inter;
+    font-family: Matter Trial;
   }
 `;
 
