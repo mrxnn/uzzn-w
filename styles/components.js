@@ -49,6 +49,10 @@ export const Button = styled.button`
   font-size: 15px;
   padding: 8px 20px;
   border-radius: 999px;
+  cursor: pointer;
+  &:hover {
+    background-color: ${props => props.theme.colors.primarydark}
+  }
 `;
 
 //header
