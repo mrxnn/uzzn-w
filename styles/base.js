@@ -7,13 +7,13 @@ const Globalstyle = createGlobalStyle`
     box-sizing: border-box;
   }
   body {
-    font-family: Product Sans;
+    font-family: Helvetica;
   }
 `;
 
 const theme = {
   colors: {
-    primary: '#0070f3',
+    primary: '#1983FF',
     text: '#4b5563'
   },
 }

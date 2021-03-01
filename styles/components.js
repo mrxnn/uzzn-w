@@ -2,8 +2,16 @@ import styled from "styled-components";
 
 //h1
 export const Heading1 = styled.h1`
-  font-size: 48px;
+  font-size: 61px;
   letter-spacing: -1px;
+  margin-bottom: ${(props) => props.mb}px;
+`;
+
+//h2
+export const Heading2 = styled.h2`
+  font-size: 40px;
+  letter-spacing: -1.5px;
+  margin-bottom: ${(props) => props.mb}px;
 `;
 
 //h3
@@ -11,12 +19,13 @@ export const Heading3 = styled.h3`
   font-size: 22px;
 `;
 
-//p
+//paragraph
 export const Text = styled.p`
   color: ${props => props.theme.colors.text};
+  margin-bottom: ${(props) => props.mb}px;
 `;
 
-//brand
+//brand logo
 export const Logo = styled.h3`
   font-size: 24px;
   letter-spacing: -.5px;
@@ -27,13 +36,17 @@ export const Container = styled.div`
   width: 90%;
   max-width: 736px;
   margin: 0 auto;
+  text-align: ${props => props.centered ? 'center' : ''};
+  border-bottom: ${props => props.bordered ? '1px solid #ebe9e9' : ''}
 `;
 
+//CTA
 export const Button = styled.button`
   border: none;
   font: inherit;
-  background-color: #4361ee;
+  background-color: ${props => props.theme.colors.primary};
   color: white;
+  font-size: 15px;
   padding: 8px 20px;
   border-radius: 999px;
 `;
@@ -47,8 +60,8 @@ export const Navbar = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #f0f0f0;
-  margin-bottom: 32px;
+  border-bottom: 1px solid #ebe9e9;
+  margin-bottom: 54px;
   ul {
     display: flex;
     align-items: center;
