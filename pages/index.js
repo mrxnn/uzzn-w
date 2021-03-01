@@ -16,7 +16,8 @@ export default function Home() {
       <Container>
         <Heading1>Blog</Heading1>
         <Text>
-          Sign up to the <Link href="/newsletter"><a>newsletter</a></Link> for weekly articles, covering all things english.
+          Sign up to the <Link href="/newsletter"><a>newsletter</a></Link> for weekly articles, 
+          covering all things english.
         </Text>
       </Container>
     </div>

@@ -20,7 +20,7 @@ export const Text = styled.p`
 //container
 export const Container = styled.div`
   width: 90%;
-  max-width: 680px;
+  max-width: 736px;
   margin: 0 auto;
 `;
 
