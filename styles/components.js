@@ -21,14 +21,14 @@ export const Heading3 = styled.h3`
 
 //paragraph
 export const Text = styled.p`
-  color: ${props => props.theme.colors.text};
+  color: ${(props) => props.theme.colors.text};
   margin-bottom: ${(props) => props.mb}px;
 `;
 
 //brand logo
 export const Logo = styled.h3`
   font-size: 24px;
-  letter-spacing: -.5px;
+  letter-spacing: -0.5px;
 `;
 
 //container
@@ -36,22 +36,22 @@ export const Container = styled.div`
   width: 90%;
   max-width: 736px;
   margin: 0 auto;
-  text-align: ${props => props.centered ? 'center' : ''};
-  border-bottom: ${props => props.bordered ? '1px solid #ebe9e9' : ''}
+  text-align: ${(props) => (props.centered ? "center" : "")};
+  border-bottom: ${(props) => (props.bordered ? "1px solid #ebe9e9" : "")};
 `;
 
 //CTA
 export const Button = styled.button`
   border: none;
   font: inherit;
-  background-color: ${props => props.theme.colors.primary};
+  background-color: ${(props) => props.theme.colors.primary};
   color: white;
   font-size: 15px;
   padding: 8px 20px;
   border-radius: 999px;
   cursor: pointer;
   &:hover {
-    background-color: ${props => props.theme.colors.primarydark}
+    background-color: ${(props) => props.theme.colors.primarydark};
   }
 `;
 
@@ -76,7 +76,7 @@ export const Navbar = styled.nav`
       }
       a {
         text-decoration: none;
-        color: ${props => props.theme.colors.text};
+        color: ${(props) => props.theme.colors.text};
         transition: color 0.1s linear;
         &:hover {
           color: black;

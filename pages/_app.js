@@ -1,4 +1,4 @@
-import { ThemeProvider } from "styled-components"
+import { ThemeProvider } from "styled-components";
 import { Globalstyle, theme } from "../styles/base";
 
 export default function MyApp({ Component, pageProps }) {
@@ -6,7 +6,7 @@ export default function MyApp({ Component, pageProps }) {
     <>
       <Globalstyle />
       <ThemeProvider theme={theme}>
-        <Component {...pageProps}/>
+        <Component {...pageProps} />
       </ThemeProvider>
     </>
   );

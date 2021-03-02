@@ -1,6 +1,6 @@
-import Head from 'next/head';
-import Header from '../components/Header';
-import Title from '../components/Title';
+import Head from "next/head";
+import Header from "../components/Header";
+import Title from "../components/Title";
 
 export default function Home() {
   return (
@@ -12,5 +12,5 @@ export default function Home() {
       <Header />
       <Title />
     </div>
-  )
+  );
 }
