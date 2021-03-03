@@ -7,13 +7,13 @@ export default function Article({
   publishedAt,
 }) {
   return (
-    <div className="mx-auto max-w-sm mb-8">
+    <div className="rounded-md bg-white mx-auto max-w-sm mb-8">
       <img
         src={imageURL}
         alt="article image - a realistic room rendered in 3d softwares"
         className="h-48 w-full object-cover rounded-tr-md rounded-tl-md"
       />
-      <div className="bg-white p-8 rounded-bl-md rounded-br-md">
+      <div className="p-8 flex flex-col">
         <h2 className="font-semibold text-gray-700">{title}</h2>
         <p className="text-sm text-gray-600 mt-4">{description}</p>
         <div className="flex items-center mt-8">
