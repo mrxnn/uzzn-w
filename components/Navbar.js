@@ -5,12 +5,12 @@ export const Navbar = () => {
   return (
     <div className="flex justify-between items-center border-b h-24">
       <div className="flex-1 pl-8">
-        <p className="text-xl font-extrabold tracking-widest">Wind</p>
+        <p className="text-xl font-extrabold tracking-widest">DSSX</p>
         <p
           className="text-gray-400"
-          style={{ letterSpacing: "7px", fontSize: "8px" }}
+          style={{ letterSpacing: "3.1px", fontSize: "8px" }}
         >
-          PHACE
+          ACADEMY
         </p>
       </div>
       <ul className="flex items-center h-full text-gray-500">
