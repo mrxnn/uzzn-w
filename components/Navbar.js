@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Badge } from "./Badge";
+import Badge from "./Badge";
 
 // Navigation
 export default function Navbar() {
