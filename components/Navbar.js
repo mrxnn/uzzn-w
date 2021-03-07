@@ -9,7 +9,7 @@ export const Navbar = () => {
         <Logo />
       </div>
       <ul className="flex items-center h-full">
-        <ListItem LinkText="Share your work" />
+        <ListItem LinkText="Share your work" LinkURL="/share" />
         <ListItem LinkText="Resources" BadgeText="36" />
         <ListItem LinkText="About us" />
         <ListItem LinkText="FAQ" />
