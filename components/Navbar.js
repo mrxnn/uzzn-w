@@ -3,15 +3,15 @@ import { Badge } from "./Badge";
 
 export const Navbar = () => {
   return (
-    <div className="flex justify-between items-center border-b">
-      <h3 className="text-xl font-extrabold flex-1 p-8">Rivercel</h3>
-      <ul className="flex text-gray-500">
-        <li className="mx-5 text-black font-medium">
+    <div className="flex justify-between items-center border-b h-24">
+      <h3 className="text-xl font-extrabold flex-1 pl-8">Rivercel</h3>
+      <ul className="flex items-center h-full text-gray-500">
+        <li className="flex items-center px-5 h-full cursor-pointer  hover:text-black hover:bg-gray-100">
           <Link href="/share">
             <a>Share your work</a>
           </Link>
         </li>
-        <li className="mx-5">
+        <li className="flex items-center px-5 h-full cursor-pointer hover:text-black hover:bg-gray-100">
           <Link href="/resources">
             <a className="flex items-center">
               <p>Resources</p>
@@ -19,17 +19,17 @@ export const Navbar = () => {
             </a>
           </Link>
         </li>
-        <li className="mx-5">
+        <li className="flex items-center px-5 h-full cursor-pointer hover:text-black hover:bg-gray-100">
           <Link href="/about">
             <a>About us</a>
           </Link>
         </li>
-        <li className="mx-5">
+        <li className="flex items-center px-5 h-full cursor-pointer hover:text-black hover:bg-gray-100">
           <Link href="/faq">
             <a>FAQ</a>
           </Link>
         </li>
-        <li className="mx-5">
+        <li className="flex items-center px-5 h-full cursor-pointer hover:text-black hover:bg-gray-100">
           <Link href="/icons">
             <a className="flex items-center">
               <p>Icons</p>
@@ -38,7 +38,7 @@ export const Navbar = () => {
           </Link>
         </li>
       </ul>
-      <div className="flex-1 flex justify-end p-8">
+      <div className="flex-1 flex justify-end pr-8">
         <button className="flex justify-center items-center">
           <p className="mr-2 text-blue-600 font-medium">Submit</p>
           <svg
