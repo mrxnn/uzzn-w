@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Badge } from "./Badge";
 
 // Navigation
-export const Navbar = () => {
+export default function Navbar() {
   return (
     <div className="flex justify-between items-center border-b h-24">
       <div className="flex-1 pl-8">
@@ -20,7 +20,7 @@ export const Navbar = () => {
       </div>
     </div>
   );
-};
+}
 
 // Logo Link
 export const Logo = () => {
