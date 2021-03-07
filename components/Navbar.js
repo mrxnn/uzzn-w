@@ -4,14 +4,19 @@ import { Badge } from "./Badge";
 export const Navbar = () => {
   return (
     <div className="flex justify-between items-center border-b h-24">
-      <h3 className="text-xl font-extrabold flex-1 pl-8">Rivercel</h3>
+      <h3 className="flex-1 pl-8">
+        <p className="text-xl font-extrabold tracking-widest leading-5">Wind</p>
+        <p className="text-xs text-gray-400" style={{ letterSpacing: "4px" }}>
+          PHACE
+        </p>
+      </h3>
       <ul className="flex items-center h-full text-gray-500">
-        <li className="flex items-center px-5 h-full cursor-pointer  hover:text-black hover:bg-gray-100">
+        <li className="flex items-center px-5 h-full cursor-pointer  hover:text-black hover:bg-gray-100 transition-colors duration-200">
           <Link href="/share">
             <a>Share your work</a>
           </Link>
         </li>
-        <li className="flex items-center px-5 h-full cursor-pointer hover:text-black hover:bg-gray-100">
+        <li className="flex items-center px-5 h-full cursor-pointer hover:text-black hover:bg-gray-100 transition-colors duration-200">
           <Link href="/resources">
             <a className="flex items-center">
               <p>Resources</p>
@@ -19,17 +24,17 @@ export const Navbar = () => {
             </a>
           </Link>
         </li>
-        <li className="flex items-center px-5 h-full cursor-pointer hover:text-black hover:bg-gray-100">
+        <li className="flex items-center px-5 h-full cursor-pointer hover:text-black hover:bg-gray-100 transition-colors duration-200">
           <Link href="/about">
             <a>About us</a>
           </Link>
         </li>
-        <li className="flex items-center px-5 h-full cursor-pointer hover:text-black hover:bg-gray-100">
+        <li className="flex items-center px-5 h-full cursor-pointer hover:text-black hover:bg-gray-100 transition-colors duration-200">
           <Link href="/faq">
             <a>FAQ</a>
           </Link>
         </li>
-        <li className="flex items-center px-5 h-full cursor-pointer hover:text-black hover:bg-gray-100">
+        <li className="flex items-center px-5 h-full cursor-pointer hover:text-black hover:bg-gray-100 transition-colors duration-200">
           <Link href="/icons">
             <a className="flex items-center">
               <p>Icons</p>
@@ -39,7 +44,7 @@ export const Navbar = () => {
         </li>
       </ul>
       <div className="flex-1 flex justify-end pr-5">
-        <button className="flex justify-center items-center hover:bg-gray-100 px-3 py-2 rounded-lg">
+        <button className="flex justify-center items-center hover:bg-gray-100 px-3 py-2 rounded-lg transition-colors duration-200">
           <p className="mr-2 text-blue-600 font-medium">Submit</p>
           <svg
             xmlns="http://www.w3.org/2000/svg"
