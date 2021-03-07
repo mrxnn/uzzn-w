@@ -5,7 +5,7 @@ export default function Home({ data }) {
   return (
     <div>
       <Head>
-        <title>Windphace - Creativity, Inspiration, Design</title>
+        <title>DSSX - Creativity, Inspiration, Design</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
