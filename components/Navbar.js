@@ -38,8 +38,8 @@ export const Navbar = () => {
           </Link>
         </li>
       </ul>
-      <div className="flex-1 flex justify-end pr-8">
-        <button className="flex justify-center items-center">
+      <div className="flex-1 flex justify-end pr-5">
+        <button className="flex justify-center items-center hover:bg-gray-100 px-3 py-2 rounded-lg">
           <p className="mr-2 text-blue-600 font-medium">Submit</p>
           <svg
             xmlns="http://www.w3.org/2000/svg"
