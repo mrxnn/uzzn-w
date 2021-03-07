@@ -4,12 +4,15 @@ import { Badge } from "./Badge";
 export const Navbar = () => {
   return (
     <div className="flex justify-between items-center border-b h-24">
-      <h3 className="flex-1 pl-8">
-        <p className="text-xl font-extrabold tracking-widest leading-5">Wind</p>
-        <p className="text-xs text-gray-400" style={{ letterSpacing: "4px" }}>
+      <div className="flex-1 pl-8">
+        <p className="text-xl font-extrabold tracking-widest">Wind</p>
+        <p
+          className="text-gray-400"
+          style={{ letterSpacing: "7px", fontSize: "8px" }}
+        >
           PHACE
         </p>
-      </h3>
+      </div>
       <ul className="flex items-center h-full text-gray-500">
         <li className="flex items-center px-5 h-full cursor-pointer  hover:text-black hover:bg-gray-100 transition-colors duration-200">
           <Link href="/share">
