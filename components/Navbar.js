@@ -55,7 +55,7 @@ export const Navbar = () => {
             height="32"
             viewBox="0 0 24 24"
           >
-            <g fill="none" class="nc-icon-wrapper">
+            <g fill="none" className="nc-icon-wrapper">
               <path
                 d="M16.667 2H7.333C3.93 2 2 3.929 2 7.333v9.334C2 20.062 3.92 22 7.333 22h9.334C20.07 22 22 20.062 22 16.667V7.333C22 3.93 20.071 2 16.667 2z"
                 fill="#0071FF"
