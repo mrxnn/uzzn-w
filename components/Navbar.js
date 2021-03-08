@@ -10,7 +10,7 @@ export default function Navbar() {
         <Logo />
       </div>
       <ul className="flex items-center h-full">
-        <ListItem LinkText="Share your work" LinkURL="/share" />
+        <ListItem LinkText="Share your work" LinkURL="/" />
         <ListItem LinkText="Resources" BadgeText="36" />
         <ListItem LinkText="About us" LinkURL="/about" />
         <ListItem LinkText="FAQ" />
