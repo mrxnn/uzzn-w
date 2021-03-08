@@ -45,7 +45,7 @@ export const ListItem = ({ LinkText, LinkURL, BadgeText, BadgeColor }) => {
   const router = useRouter();
   LinkURL = !LinkURL ? `/${LinkText.toLowerCase().replace(" ", "-")}` : LinkURL;
   let linkState = router.pathname === LinkURL ? "text-black" : "text-gray-500";
-  let classList = `${linkState} flex items-center px-5 h-full cursor-pointer hover:text-black hover:bg-gray-100 transition-colors duration-200`;
+  let classList = `${linkState} flex items-center px-5 h-full cursor-pointer hover:text-black hover:bg-gray-100 transition-colors duration-500`;
 
   return (
     <li className={classList}>
