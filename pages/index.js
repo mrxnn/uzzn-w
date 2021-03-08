@@ -1,12 +1,9 @@
-import Head from "next/head";
+import Layout from "../components/Layout";
 
 export default function Home({ data }) {
   return (
-    <div>
-      <Head>
-        <title>DSSX - Creativity, Inspiration, Design</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-    </div>
+    <Layout title="Inspiration, Creativity, Design">
+      <h1>Share</h1>
+    </Layout>
   );
 }
