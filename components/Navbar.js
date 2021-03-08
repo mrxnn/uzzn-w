@@ -51,13 +51,15 @@ export const ListItem = ({ LinkText, LinkURL, BadgeText, BadgeColor }) => {
     <li className={classList}>
       {!BadgeText && (
         <Link href={LinkURL}>
-          <a>{LinkText}</a>
+          <a className="h-full flex items-center">
+            <p>{LinkText}</p>
+          </a>
         </Link>
       )}
 
       {BadgeText && (
         <Link href={LinkURL}>
-          <a className="flex items-center">
+          <a className="h-full flex items-center">
             <p>{LinkText}</p>
             <Badge text={BadgeText} classNames={BadgeColor} />
           </a>
