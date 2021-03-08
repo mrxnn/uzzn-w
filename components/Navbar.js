@@ -26,15 +26,17 @@ export default function Navbar() {
 // Logo Link
 export const Logo = () => {
   return (
-    <>
-      <p className="text-xl font-extrabold tracking-widest">DSSX</p>
-      <p
-        className="text-gray-400"
-        style={{ letterSpacing: "3.1px", fontSize: "8px" }}
-      >
-        ACADEMY
-      </p>
-    </>
+    <Link href="/">
+      <a>
+        <p className="text-xl font-extrabold tracking-widest">DSSX</p>
+        <p
+          className="text-gray-400"
+          style={{ letterSpacing: "3.1px", fontSize: "8px" }}
+        >
+          ACADEMY
+        </p>
+      </a>
+    </Link>
   );
 };
 
