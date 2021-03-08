@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Navbar from "../components/Navbar";
 
 export default function Home({ data }) {
   return (
@@ -8,8 +7,6 @@ export default function Home({ data }) {
         <title>DSSX - Creativity, Inspiration, Design</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <Navbar />
     </div>
   );
 }

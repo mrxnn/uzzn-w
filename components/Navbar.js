@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Badge from "./Badge";
+import { useRouter } from "next/router";
 
 // Navigation
 export default function Navbar() {
@@ -11,7 +12,7 @@ export default function Navbar() {
       <ul className="flex items-center h-full">
         <ListItem LinkText="Share your work" LinkURL="/share" />
         <ListItem LinkText="Resources" BadgeText="36" />
-        <ListItem LinkText="About us" />
+        <ListItem LinkText="About us" LinkURL="/about" />
         <ListItem LinkText="FAQ" />
         <ListItem LinkText="Icons" BadgeText="NEW" BadgeColor="bg-green-500" />
       </ul>
@@ -39,12 +40,13 @@ export const Logo = () => {
 
 // Navigation Item
 export const ListItem = ({ LinkText, LinkURL, BadgeText, BadgeColor }) => {
-  if (!LinkURL) {
-    LinkURL = `/${LinkText.toLowerCase().replace(" ", "-")}`;
-  }
+  const router = useRouter();
+  LinkURL = !LinkURL ? `/${LinkText.toLowerCase().replace(" ", "-")}` : LinkURL;
+  let linkState = router.pathname === LinkURL ? "text-black" : "text-gray-500";
+  let classList = `${linkState} flex items-center px-5 h-full cursor-pointer hover:text-black hover:bg-gray-100 transition-colors duration-200`;
 
   return (
-    <li className="flex items-center px-5 h-full cursor-pointer text-gray-500 hover:text-black hover:bg-gray-100 transition-colors duration-200">
+    <li className={classList}>
       {!BadgeText && (
         <Link href={LinkURL}>
           <a>{LinkText}</a>
