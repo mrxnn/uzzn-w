@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Badge from "./Badge";
 import { useRouter } from "next/router";
+import Badge from "./Badge";
 
 // Navigation
 export default function Navbar() {
