@@ -29,12 +29,7 @@ export const Logo = () => {
     <Link href="/">
       <a>
         <p className="text-xl font-extrabold tracking-widest">DSSX</p>
-        <p
-          className="text-gray-400"
-          style={{ letterSpacing: "3.1px", fontSize: "8px" }}
-        >
-          ACADEMY
-        </p>
+        <p className="text-gray-400 text-xxx tracking-xwidest mt-1">ACADEMY</p>
       </a>
     </Link>
   );
