@@ -5,7 +5,7 @@ import Badge from "./Badge";
 // Navigation
 export default function Navbar() {
   return (
-    <div className="flex justify-between items-center border-b h-24">
+    <div className="flex justify-between items-center border-b dark:border-gray-800 h-24">
       <div className="flex-1 pl-8">
         <Logo />
       </div>
@@ -14,7 +14,11 @@ export default function Navbar() {
         <ListItem LinkText="Resources" BadgeText="36" />
         <ListItem LinkText="About us" LinkURL="/about" />
         <ListItem LinkText="FAQ" />
-        <ListItem LinkText="Icons" BadgeText="NEW" BadgeColor="bg-[#A58861]" />
+        <ListItem
+          LinkText="Icons"
+          BadgeText="NEW"
+          BadgeColor="bg-[#A58861] dark:bg-[#A58861]"
+        />
       </ul>
       <div className="flex-1 flex justify-end pr-5">
         <CTA />
@@ -27,9 +31,9 @@ export default function Navbar() {
 export const Logo = () => {
   return (
     <Link href="/">
-      <a>
+      <a className="inline-block">
         <p className="text-xl font-extrabold tracking-widest">DSSX</p>
-        <p className="text-gray-400 text-[0.50rem] tracking-[0.38em] mt-1">
+        <p className="text-gray-400 dark:text-gray-400 text-[0.50rem] tracking-[0.38em] mt-1">
           ACADEMY
         </p>
       </a>
@@ -41,8 +45,11 @@ export const Logo = () => {
 export const ListItem = ({ LinkText, LinkURL, BadgeText, BadgeColor }) => {
   const router = useRouter();
   LinkURL = !LinkURL ? `/${LinkText.toLowerCase().replace(" ", "-")}` : LinkURL;
-  let linkState = router.pathname === LinkURL ? "text-black" : "text-gray-500";
-  let classList = `${linkState} flex items-center  h-full cursor-pointer hover:text-black hover:bg-gray-100 transition-colors duration-500`;
+  let linkState =
+    router.pathname === LinkURL
+      ? "text-black dark:text-gray-100"
+      : "text-gray-500 dark:text-gray-400";
+  let classList = `${linkState} flex items-center h-full cursor-pointer hover:text-black dark:hover:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-500`;
 
   return (
     <li className={classList}>
@@ -69,7 +76,7 @@ export const ListItem = ({ LinkText, LinkURL, BadgeText, BadgeColor }) => {
 // Navbar CTA
 export const CTA = () => {
   return (
-    <button className="flex justify-center items-center hover:bg-gray-100 px-3 py-2 rounded-lg transition-colors duration-200">
+    <button className="flex justify-center items-center hover:bg-gray-100 dark:hover:bg-gray-800 px-3 py-2 rounded-lg transition-colors duration-200 focus:outline-none focus:ring">
       <p className="mr-2 text-[#0071FF] font-medium">Submit</p>
       <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 0 24 24">
         <g fill="none" className="nc-icon-wrapper">

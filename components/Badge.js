@@ -4,7 +4,7 @@ export default function Badge({ text, classNames }) {
   const classes =
     classNames +
     (isNumeric ? " text-xs" : " text-[0.60rem]") +
-    " bg-gray-400 rounded-lg font-semibold px-2 text-white h-5 flex justify-center items-center ml-2 mt-1";
+    " bg-gray-400 dark:bg-gray-600 rounded-lg font-semibold px-2 text-white h-5 flex justify-center items-center ml-2 mt-1";
 
   return (
     <div className={classes}>
