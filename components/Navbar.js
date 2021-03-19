@@ -76,7 +76,7 @@ export const ListItem = ({ LinkText, LinkURL, BadgeText, BadgeColor }) => {
 // Navbar CTA
 export const CTA = () => {
   return (
-    <button className="flex justify-center items-center hover:bg-gray-100 dark:hover:bg-gray-800 px-3 py-2 rounded-lg transition-colors duration-200 focus:outline-none focus:ring">
+    <button className="flex justify-center items-center hover:bg-gray-100 dark:hover:bg-gray-800 px-3 py-2 rounded-lg focus:outline-none focus:ring">
       <p className="mr-2 text-[#0071FF] font-medium">Submit</p>
       <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 0 24 24">
         <g fill="none" className="nc-icon-wrapper">
