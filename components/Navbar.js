@@ -14,7 +14,7 @@ export default function Navbar() {
         <ListItem LinkText="Resources" BadgeText="36" />
         <ListItem LinkText="About us" LinkURL="/about" />
         <ListItem LinkText="FAQ" />
-        <ListItem LinkText="Icons" BadgeText="NEW" BadgeColor="bg-brown" />
+        <ListItem LinkText="Icons" BadgeText="NEW" BadgeColor="bg-[#A58861]" />
       </ul>
       <div className="flex-1 flex justify-end pr-5">
         <CTA />
@@ -29,7 +29,9 @@ export const Logo = () => {
     <Link href="/">
       <a>
         <p className="text-xl font-extrabold tracking-widest">DSSX</p>
-        <p className="text-gray-400 text-xxx tracking-xwidest mt-1">ACADEMY</p>
+        <p className="text-gray-400 text-[0.50rem] tracking-[0.38em] mt-1">
+          ACADEMY
+        </p>
       </a>
     </Link>
   );
@@ -68,7 +70,7 @@ export const ListItem = ({ LinkText, LinkURL, BadgeText, BadgeColor }) => {
 export const CTA = () => {
   return (
     <button className="flex justify-center items-center hover:bg-gray-100 px-3 py-2 rounded-lg transition-colors duration-200">
-      <p className="mr-2 text-brand-blue font-medium">Submit</p>
+      <p className="mr-2 text-[#0071FF] font-medium">Submit</p>
       <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 0 24 24">
         <g fill="none" className="nc-icon-wrapper">
           <path
