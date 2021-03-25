@@ -3,7 +3,7 @@ module.exports = {
   darkMode: "class", // or 'media' or 'class'
   theme: {
     fontFamily: {
-      sans: ["Matter Trial"],
+      sans: ["TT Commons"],
     },
     extend: {
       // colors: {

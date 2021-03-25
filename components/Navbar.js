@@ -3,10 +3,10 @@ import { useRouter } from "next/router";
 import Badge from "./Badge";
 
 // Navigation
-export default function Navbar() {
+export default function BlogNav() {
   return (
-    <div className="flex justify-between items-center border-b dark:border-gray-800 h-24">
-      <div className="flex-1 pl-8">
+    <div className="flex justify-between items-center dark:border-gray-800 h-24">
+      <div className="px-8">
         <Logo />
       </div>
       <ul className="flex items-center h-full">
@@ -33,7 +33,7 @@ export const Logo = () => {
     <Link href="/">
       <a className="inline-block">
         <p className="text-xl font-extrabold tracking-widest">DSSX</p>
-        <p className="text-gray-400 dark:text-gray-400 text-[0.50rem] tracking-[0.38em] mt-1">
+        <p className="text-gray-500  text-[0.50rem] tracking-[0.38em]">
           ACADEMY
         </p>
       </a>
@@ -45,11 +45,11 @@ export const Logo = () => {
 export const ListItem = ({ LinkText, LinkURL, BadgeText, BadgeColor }) => {
   const router = useRouter();
   LinkURL = !LinkURL ? `/${LinkText.toLowerCase().replace(" ", "-")}` : LinkURL;
-  let linkState =
+  let activeLink =
     router.pathname === LinkURL
       ? "text-black dark:text-gray-100"
       : "text-gray-500 dark:text-gray-400";
-  let classList = `${linkState} flex items-center h-full cursor-pointer hover:text-black dark:hover:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-800`;
+  let classList = `${activeLink} flex items-center h-full cursor-pointer hover:text-black dark:hover:text-gray-100 font-medium`;
 
   return (
     <li className={classList}>
