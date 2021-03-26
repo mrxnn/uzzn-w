@@ -7,8 +7,8 @@ export default function ThemeToggle() {
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
       className="bg-gray-300 dark:bg-gray-800 h-8 flex items-center justify-center rounded-lg px-2 focus:outline-none focus:ring fixed bottom-8 right-8 z-50"
     >
-      <p className="text-xs font-medium tracking-[3px] text-gray-500 mr-[2px]">
-        {theme && theme.toUpperCase()}
+      <p className="text-xs font-medium tracking-[3px] text-gray-500 mr-[2px] transform translate-y-[1.5px]">
+        {theme === "light" ? "DARK" : "LIGHT"}
       </p>
 
       <svg
