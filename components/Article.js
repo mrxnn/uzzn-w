@@ -16,7 +16,7 @@ export default function Article({
             alt={title}
             className="absolute inset-0 h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[rgba(0,0,0,.7)] to-transparent">
+          <div className="absolute inset-0 bg-gradient-to-t from-[rgba(0,0,0,.8)] to-transparent">
             &nbsp;
           </div>
           <div className="absolute bottom-0 text-white p-8 space-y-3">

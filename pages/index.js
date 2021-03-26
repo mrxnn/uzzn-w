@@ -5,7 +5,7 @@ export default function Home({ data }) {
   return (
     <Layout title="Inspiration, Creativity, Design">
       <div className="max-w-6xl mx-auto">
-        <h1 className="text-5xl font-bold mt-12">Featured</h1>
+        <h1 className="text-5xl font-bold mt-12">Spotlight</h1>
         <div className="grid grid-cols-4 grid-rows-2 mt-9 gap-8">
           <Article
             variant="lg"
