@@ -14,7 +14,7 @@ export default function Article({
           <img
             src={imageURL}
             alt={title}
-            className="absolute inset-0 h-full object-cover"
+            className="absolute inset-0 w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[rgba(0,0,0,.8)] to-transparent">
             &nbsp;
