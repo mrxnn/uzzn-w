@@ -36,7 +36,7 @@ export default function Article({
             alt={title}
             className="h-52 w-full object-cover rounded-md"
           />
-          <h3 className="text-xs font-semibold tracking-widest opacity-70 mt-4 mb-1">
+          <h3 className="text-xs font-semibold tracking-widest text-gray-500 mt-4 mb-1">
             {category}
           </h3>
           <h2 className="text-lg font-medium leading-6 cursor-pointer">
