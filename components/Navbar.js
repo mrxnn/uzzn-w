@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import Badge from "./Badge";
 
 // Navigation
-export default function BlogNav() {
+export default function Navbar() {
   return (
     <div className="flex justify-between items-center dark:border-gray-800 h-24">
       <div className="px-8">
@@ -17,7 +17,7 @@ export default function BlogNav() {
         <ListItem
           LinkText="Icons"
           BadgeText="NEW"
-          BadgeColor="bg-[#A58861] dark:bg-[#A58861]"
+          BadgeColor="bg-green-500 dark:bg-green-500"
         />
       </ul>
       <div className="flex-1 flex justify-end pr-5">
