@@ -7,17 +7,15 @@ export default function Home({ data }) {
       <div className="max-w-6xl mx-auto">
         <h1 className="text-5xl font-bold mt-12">Featured</h1>
         <div className="grid grid-cols-4 grid-rows-2 mt-9 gap-8">
-          <div className="col-span-2 row-span-2">
-            <Article
-              variant="lg"
-              category="UI/UX"
-              imageURL="/images/5.jpg"
-              title="Web Usability: Breadcrumbs Design Tips and Practices"
-              subtitle="In this article, let's continue the theme of web usability: learn what
+          <Article
+            variant="lg"
+            category="UI/UX"
+            imageURL="/images/5.jpg"
+            title="Web Usability: Breadcrumbs Design Tips and Practices"
+            subtitle="In this article, let's continue the theme of web usability: learn what
                   is breadcrumbs, explore their types and check UX practices to make
                   them work effectively."
-            />
-          </div>
+          />
           <Article
             category="ILLUSTRATION"
             title="45 Inspiring Illustrations About Workspaces, Creativity and Art"

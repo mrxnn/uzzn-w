@@ -10,7 +10,7 @@ export default function Article({
   return (
     <>
       {lg && (
-        <div className="h-full relative rounded-md overflow-hidden shadow-2xl">
+        <div className="h-full relative rounded-md overflow-hidden shadow-2xl col-span-2 row-span-2">
           <img
             src={imageURL}
             alt={title}
