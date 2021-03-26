@@ -1,11 +1,18 @@
 import Article from "../components/Article";
 import Layout from "../components/Layout";
+import Badge from "../components/Badge";
 
 export default function Home({ data }) {
   return (
     <Layout title="Inspiration, Creativity, Design">
       <div className="max-w-6xl mx-auto">
-        <h1 className="text-5xl font-bold mt-12">Spotlight</h1>
+        <div className="flex justify-between items-end mt-12">
+          <h1 className="text-5xl font-bold">Spotlight</h1>
+          <div className="flex">
+            <h4 className="text-1xl font-bold">Sort by</h4>
+            <Badge text="LATEST FIRST" classNames="tracking-widest" />
+          </div>
+        </div>
         <div className="grid grid-cols-4 grid-rows-2 mt-9 gap-8">
           <Article
             variant="lg"
