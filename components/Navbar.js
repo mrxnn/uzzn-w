@@ -31,9 +31,9 @@ export default function Navbar() {
 export const Logo = () => {
   return (
     <Link href="/">
-      <a className="inline-block">
+      <a className="inline-block transform translate-y-[2px]">
         <p className="text-xl font-extrabold tracking-widest">DSSX</p>
-        <p className="text-gray-500  text-[0.50rem] tracking-[0.38em]">
+        <p className="text-gray-500 text-[0.50rem] tracking-[0.38em] mt-[-2px]">
           ACADEMY
         </p>
       </a>
@@ -76,9 +76,16 @@ export const ListItem = ({ LinkText, LinkURL, BadgeText, BadgeColor }) => {
 // Navbar CTA
 export const CTA = () => {
   return (
-    <button className="flex justify-center items-center hover:bg-gray-100 dark:hover:bg-gray-800 px-3 py-2 rounded-lg focus:outline-none focus:ring">
-      <p className="mr-2 text-[#0071FF] font-medium">Submit</p>
-      <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 0 24 24">
+    <button className="flex items-center hover:bg-gray-100 dark:hover:bg-gray-900 px-3 py-2 rounded-lg focus:outline-none focus:ring transform translate-y-[-1px]">
+      <p className="mr-2 text-[#0071FF] font-semibold transform translate-y-[1px]">
+        Login
+      </p>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="32"
+        viewBox="0 0 24 24"
+        className="transform translate-y-[-1px]"
+      >
         <g fill="none" className="nc-icon-wrapper">
           <path
             d="M16.667 2H7.333C3.93 2 2 3.929 2 7.333v9.334C2 20.062 3.92 22 7.333 22h9.334C20.07 22 22 20.062 22 16.667V7.333C22 3.93 20.071 2 16.667 2z"
