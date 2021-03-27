@@ -19,9 +19,6 @@ export default function Home({ data }) {
             category="UI/UX"
             imageURL="/images/3.jpg"
             title="Web Usability: Breadcrumbs Design Tips and Practices"
-            subtitle="In this article, let's continue the theme of web usability: learn what
-                  is breadcrumbs, explore their types and check UX practices to make
-                  them work effectively."
           />
           <Article
             category="ILLUSTRATION"

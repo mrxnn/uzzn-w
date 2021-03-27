@@ -46,7 +46,7 @@ const LargeArticle = ({ category, title, subtitle, imageURL }) => {
       <div className="absolute bottom-0 text-white p-8 space-y-3 pointer-events-none">
         <h4 className="text-xs font-semibold tracking-widest">{category}</h4>
         <h2 className="text-3xl font-bold">{title}</h2>
-        <p className="">{subtitle}</p>
+        {subtitle && <p className="">{subtitle}</p>}
       </div>
     </div>
   );
