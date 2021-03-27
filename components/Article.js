@@ -15,7 +15,7 @@ const ANIMATION =
 //basic
 const BasicArticle = ({ category, title, imageURL }) => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col h-[300px]">
       <div className="flex-1 rounded-md overflow-hidden">
         <img
           src={imageURL}
@@ -34,7 +34,7 @@ const BasicArticle = ({ category, title, imageURL }) => {
 //large
 const LargeArticle = ({ category, title, subtitle, imageURL }) => {
   return (
-    <div className="relative rounded-md overflow-hidden shadow-2xl col-span-2 row-span-2 cursor-pointer">
+    <div className="relative h-full max-h-[640px] rounded-md overflow-hidden shadow-2xl col-span-2 row-span-2 cursor-pointer">
       <img
         src={imageURL}
         alt={title}
