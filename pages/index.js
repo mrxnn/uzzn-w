@@ -9,7 +9,7 @@ export default function Home({ data }) {
         <div className="flex justify-between items-end mt-12">
           <h1 className="text-5xl font-bold">Spotlight</h1>
           <div className="flex">
-            <h4 className="text-1xl font-bold">Sort by</h4>
+            <p className="text-1xl font-bold">Sort by</p>
             <Badge text="LATEST FIRST" classNames="tracking-widest" />
           </div>
         </div>
