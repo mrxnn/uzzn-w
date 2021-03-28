@@ -13,7 +13,7 @@ export default function Home({ data }) {
             <Badge text="LATEST FIRST" classNames="tracking-widest" />
           </div>
         </div>
-        <div className="grid grid-cols-4 grid-rows-2 mt-9 gap-8 h-[630px]">
+        <div className="grid grid-cols-4 grid-rows-2 mt-9 gap-8 h-[625px]">
           <Thumbnail
             variant="extended"
             category="UI/UX"
