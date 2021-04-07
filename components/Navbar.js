@@ -17,7 +17,7 @@ export default function Navbar() {
         <ListItem
           LinkText="Icons"
           BadgeText="NEW"
-          BadgeColor="bg-green-500 dark:bg-green-500"
+          BadgeClasses="bg-green-500 dark:bg-green-500"
         />
       </ul>
       <div className="flex-1 flex justify-end pr-5">
@@ -42,9 +42,9 @@ export const Logo = () => {
 };
 
 // Navigation Item
-export const ListItem = ({ LinkText, LinkURL, BadgeText, BadgeColor }) => {
+export const ListItem = ({ LinkText, LinkURL, BadgeText, BadgeClasses }) => {
   const router = useRouter();
-  LinkURL = !LinkURL ? `/${LinkText.toLowerCase().replace(" ", "-")}` : LinkURL;
+  LinkURL = LinkURL ?? `/${LinkText.toLowerCase().replace(" ", "-")}`;
   let activeLink =
     router.pathname === LinkURL
       ? "text-black dark:text-gray-100"
@@ -53,22 +53,12 @@ export const ListItem = ({ LinkText, LinkURL, BadgeText, BadgeColor }) => {
 
   return (
     <li className={classList}>
-      {!BadgeText && (
-        <Link href={LinkURL}>
-          <a className="h-full px-5 flex items-center">
-            <p>{LinkText}</p>
-          </a>
-        </Link>
-      )}
-
-      {BadgeText && (
-        <Link href={LinkURL}>
-          <a className="h-full px-5 flex items-center">
-            <p>{LinkText}</p>
-            <Badge text={BadgeText} classNames={BadgeColor} />
-          </a>
-        </Link>
-      )}
+      <Link href={LinkURL}>
+        <a className="h-full px-5 flex items-center">
+          <p>{LinkText}</p>
+          {BadgeText && <Badge text={BadgeText} classNames={BadgeClasses} />}
+        </a>
+      </Link>
     </li>
   );
 };
