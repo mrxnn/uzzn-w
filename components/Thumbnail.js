@@ -28,7 +28,7 @@ const ExtendedThumbnail = ({ category, title, description, imageURL }) => {
         &nbsp;
       </div>
       <div className="absolute bottom-0 left-0 text-white p-8 space-y-3">
-        <h4 className="text-xs font-semibold tracking-widest">{category}</h4>
+        <h3 className="text-xs font-semibold tracking-widest">{category}</h3>
         <h2 className="text-3xl font-bold">{title}</h2>
         {description && <p>{description}</p>}
       </div>
@@ -48,7 +48,7 @@ const BasicThumbnail = ({ category, title, imageURL }) => {
           className={HOVER_TRANSITION}
         />
       </div>
-      <h3 className="text-xs font-semibold tracking-widest text-gray-500 mt-4 mb-1">
+      <h3 className="text-xs font-semibold tracking-widest text-gray-600 dark:text-gray-400 mt-4 mb-1">
         {category}
       </h3>
       <h2 className="text-lg font-medium leading-6 cursor-pointer">{title}</h2>

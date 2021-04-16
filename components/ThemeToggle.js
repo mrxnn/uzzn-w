@@ -7,10 +7,6 @@ export default function ThemeToggle() {
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
       className="bg-gray-200 dark:bg-gray-900 h-8 flex items-center justify-center rounded-lg px-2 focus:outline-none focus:ring fixed bottom-8 right-8 z-50"
     >
-      <p className="text-xs font-semibold tracking-[1px] text-gray-500 mr-[2px] transform translate-y-[1.6px]">
-        {theme === "light" ? "DARK" : "LIGHT"}
-      </p>
-
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"

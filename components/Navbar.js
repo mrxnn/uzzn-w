@@ -17,7 +17,7 @@ export default function Navbar() {
         <ListItem
           LinkText="Icons"
           BadgeText="NEW"
-          BadgeClasses="bg-green-500 dark:bg-green-500"
+          BadgeClasses="bg-green-600 dark:bg-green-600"
         />
       </ul>
       <div className="flex-1 flex justify-end pr-5">
@@ -33,7 +33,7 @@ export const Logo = () => {
     <Link href="/">
       <a className="inline-block transform translate-y-[2px]">
         <p className="text-xl font-extrabold tracking-widest">DSSX</p>
-        <p className="text-gray-500 text-[0.50rem] tracking-[0.38em] mt-[-2px]">
+        <p className="text-gray-900 dark:text-gray-300 text-[0.50rem] tracking-[0.38em] mt-[-2px]">
           ACADEMY
         </p>
       </a>
