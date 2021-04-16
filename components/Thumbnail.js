@@ -28,7 +28,7 @@ const ExtendedThumbnail = ({ category, title, description, imageURL }) => {
         &nbsp;
       </div>
       <div className="absolute bottom-0 left-0 text-white p-8 space-y-3">
-        <h3 className="text-xs font-semibold tracking-widest">{category}</h3>
+        <h2 className="text-xs font-semibold tracking-widest">{category}</h2>
         <h2 className="text-3xl font-bold">{title}</h2>
         {description && <p>{description}</p>}
       </div>

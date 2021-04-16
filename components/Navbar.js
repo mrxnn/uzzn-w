@@ -17,7 +17,7 @@ export default function Navbar() {
         <ListItem
           LinkText="Icons"
           BadgeText="NEW"
-          BadgeClasses="bg-green-600 dark:bg-green-600"
+          BadgeClasses="bg-blue-600 dark:bg-blue-600"
         />
       </ul>
       <div className="flex-1 flex justify-end pr-5">
