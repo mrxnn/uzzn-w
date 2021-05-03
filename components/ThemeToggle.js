@@ -1,7 +1,17 @@
 import { useTheme } from "next-themes";
+import { useEffect } from "react";
 
 export default function ThemeToggle() {
   const { theme, setTheme } = useTheme();
+
+  //hotkeys
+  useEffect(() => {
+    window.addEventListener("keydown", (e) => {
+      if (e.key == "x" || e.key == "X")
+        setTheme(theme === "light" ? "dark" : "light");
+    });
+  });
+
   return (
     <button
       aria-label="Toggle Theme"
