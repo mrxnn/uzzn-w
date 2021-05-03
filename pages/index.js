@@ -22,12 +22,12 @@ export default function Home({ data }) {
           />
           <Thumbnail
             category="ILLUSTRATION"
-            title="45 Inspiring Illustrations About Workspaces, Creativity and Art"
+            title="12 Inspiring Illustrations About Workspaces, Creativity and Art"
             imageURL="/images/5.jpg"
           />
           <Thumbnail
             category="UI/UX"
-            title="45 Photo Content in User Interfaces: 8 Basic Goals"
+            title="Photo Content in User Interfaces: 8 Basic Goals"
             imageURL="/images/4.jpg"
           />
           <Thumbnail
@@ -40,6 +40,12 @@ export default function Home({ data }) {
             title="Big Review of Major UI Design Trends for Web and Mobile in 2020"
             imageURL="/images/7.jpg"
           />
+        </div>
+        <div className="flex justify-center items-center space-x-3 my-14">
+          <p className="mt-[3px] font-medium text-gray-500">Scroll Down</p>
+          <div className="flex justify-center items-center bg-blue-700 bg-opacity-20 dark:bg-opacity-30 w-7 h-7 rounded-full">
+            <img src="/icons/arrow-down.svg" alt="Down Arrow Icon" />
+          </div>
         </div>
       </div>
     </Layout>
