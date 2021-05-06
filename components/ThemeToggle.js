@@ -4,18 +4,23 @@ import { useEffect } from "react";
 export default function ThemeToggle() {
   const { theme, setTheme } = useTheme();
 
-  //hotkeys
+  const toggleTheme = () => {
+    setTheme(theme === "light" ? "dark" : "light");
+  };
+
+  const handleKeyDown = (e) => {
+    if (e.key === "x" || e.key === "X") toggleTheme();
+  };
+
   useEffect(() => {
-    window.addEventListener("keydown", (e) => {
-      if (e.key == "x" || e.key == "X")
-        setTheme(theme === "light" ? "dark" : "light");
-    });
-  });
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [theme]);
 
   return (
     <button
       aria-label="Toggle Theme"
-      onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+      onClick={toggleTheme}
       className="bg-gray-200 dark:bg-gray-900 h-8 flex items-center justify-center rounded-lg px-2 focus:outline-none focus:ring fixed bottom-8 right-8 z-50"
     >
       <svg
