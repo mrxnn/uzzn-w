@@ -1,4 +1,4 @@
-import "tailwindcss/tailwind.css";
+import "/styles/global.css";
 import { ThemeProvider } from "next-themes";
 import Navbar from "../components/Navbar";
 import ThemeToggle from "../components/ThemeToggle";

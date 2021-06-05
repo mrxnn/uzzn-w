@@ -4,7 +4,7 @@ module.exports = {
   darkMode: "class", // or 'media' or 'class'
   theme: {
     fontFamily: {
-      sans: ["TT Commons"],
+      sans: ["TTCommons"],
     },
     extend: {
       // colors: {
