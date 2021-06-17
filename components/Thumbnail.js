@@ -23,6 +23,7 @@ const ExtendedThumbnail = ({ category, title, description, imageURL }) => {
         layout="fill"
         objectFit="cover"
         className={HOVER_TRANSITION}
+        placeholder="blur"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-[rgba(0,0,0,.8)] to-transparent pointer-events-none">
         &nbsp;
@@ -46,6 +47,7 @@ const BasicThumbnail = ({ category, title, imageURL }) => {
           layout="fill"
           objectFit="cover"
           className={HOVER_TRANSITION}
+          placeholder="blur"
         />
       </div>
       <h3 className="text-xs font-semibold tracking-widest text-gray-600 dark:text-gray-400 mt-4 mb-1">
