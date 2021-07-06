@@ -17,28 +17,28 @@ export default function Home({ data }) {
           <Thumbnail
             variant="extended"
             category="UI/UX"
-            imageURL={image_usability}
+            imageURL="/images/3.jpg"
             title="Visualize Team Usage With Sophisticated Usage Dashboard"
           />
           <Thumbnail
             category="ILLUSTRATION"
             title="Supercharge your Vercel Projects with Integrations"
-            imageURL={image_illustrations}
+            imageURL="/images/4.jpg"
           />
           <Thumbnail
             category="UI/UX"
             title="$102M to Continue Building the Next Web, Together"
-            imageURL={image_goals}
+            imageURL="/images/5.jpg"
           />
           <Thumbnail
             category="UI/UX"
             title="Next.js 11, Next.js Live and more: A recap of Next.js Conf Special Edition"
-            imageURL={image_ecological}
+            imageURL="/images/7.jpg"
           />
           <Thumbnail
             category="MOTION"
             title="How Core Web Vitals Will Impact Google Rankings in 2021"
-            imageURL={image_trends}
+            imageURL="/images/9.jpg"
           />
         </div>
         <div className="flex justify-center items-center space-x-3 my-14">
