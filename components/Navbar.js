@@ -32,9 +32,9 @@ export const Logo = () => {
   return (
     <Link href="/">
       <a className="inline-block transform translate-y-[2px]">
-        <p className="text-lg font-extrabold tracking-widest">DSSX</p>
-        <p className="text-gray-900 dark:text-gray-300 text-[0.50rem] tracking-[0.33em] mt-[-2px]">
-          ACADEMY
+        <p className="text-xl font-extrabold tracking-wide">MAYURA</p>
+        <p className="text-gray-900 dark:text-gray-300 text-[0.50rem] tracking-[0.42em] mt-[-3px]">
+          RAMANAYAKA
         </p>
       </a>
     </Link>
@@ -49,7 +49,7 @@ export const ListItem = ({ LinkText, LinkURL, BadgeText, BadgeClasses }) => {
     router.pathname === LinkURL
       ? "text-black dark:text-gray-100"
       : "text-gray-500 dark:text-gray-400";
-  let classList = `${activeLink} flex items-center h-full cursor-pointer hover:text-black dark:hover:text-gray-100 text-sm`;
+  let classList = `${activeLink} flex items-center h-full cursor-pointer hover:text-black dark:hover:text-gray-100 font-medium`;
 
   return (
     <li className={classList}>
@@ -67,7 +67,9 @@ export const ListItem = ({ LinkText, LinkURL, BadgeText, BadgeClasses }) => {
 export const CTA = () => {
   return (
     <button className="flex items-center hover:bg-gray-100 dark:hover:bg-gray-900 px-3 py-2 rounded-lg focus:outline-none focus:ring">
-      <p className="mr-2 text-[#0071FF] font-semibold text-sm">Login</p>
+      <p className="mr-2 text-[#0071FF] font-semibold transform translate-y-[1px]">
+        Login
+      </p>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         height="32"

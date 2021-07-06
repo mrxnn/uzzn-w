@@ -7,9 +7,9 @@ export default function Home({ data }) {
     <Layout title="Inspiration, Creativity, Design">
       <div className="max-w-6xl mx-auto">
         <div className="flex justify-between items-end mt-12">
-          <h1 className="text-4xl tracking-tight font-bold">Featured posts</h1>
-          <div className="flex">
-            <p className="text-sm font-bold">Sort by</p>
+          <h1 className="text-5xl tracking-tight font-bold">Featured posts</h1>
+          <div className="flex items-center">
+            <p className="font-bold">Sort by</p>
             <Badge text="LATEST FIRST" classNames="tracking-widest" />
           </div>
         </div>
@@ -42,9 +42,7 @@ export default function Home({ data }) {
           />
         </div>
         <div className="flex justify-center items-center space-x-3 my-14">
-          <p className="mt-[3px] text-sm font-medium text-gray-500">
-            Scroll Down
-          </p>
+          <p className="mt-[3px] font-medium text-gray-500">Scroll Down</p>
           <div className="flex justify-center items-center bg-blue-700 bg-opacity-20 dark:bg-opacity-30 w-7 h-7 rounded-full">
             <img src="/icons/arrow-down.svg" alt="Down Arrow Icon" />
           </div>

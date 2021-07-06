@@ -48,10 +48,10 @@ const BasicThumbnail = ({ category, title, imageURL }) => {
           className={HOVER_TRANSITION}
         />
       </div>
-      <h3 className="text-[12px] font-semibold tracking-wide dark:text-gray-400 mt-4 mb-1">
+      <h3 className="text-[12px] font-semibold tracking-widest text-gray-500 dark:text-gray-400 mt-4 mb-1">
         {category}
       </h3>
-      <h2 className="leading-6 text-[15px] cursor-pointer">{title}</h2>
+      <h2 className="leading-6 font-medium  cursor-pointer">{title}</h2>
     </div>
   );
 };
