@@ -6,13 +6,13 @@ export default function Badge({ text, classNames }) {
 
   const classes =
     classNames +
-    (isNumeric ? " text-xs" : " text-[0.60rem]") +
+    (isNumeric ? " text-[0.70rem]" : " text-[0.60rem]") +
     " rounded-lg font-semibold px-2 text-white h-5 flex justify-center items-center ml-2" +
     bgDefault;
 
   return (
     <div className={classes}>
-      <p className="transform translate-y-[1px]">{text}</p>
+      <p>{text}</p>
     </div>
   );
 }

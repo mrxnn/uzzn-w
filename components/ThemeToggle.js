@@ -18,8 +18,8 @@ export default function ThemeToggle() {
   }, [theme]);
 
   return (
-    <p className="fixed bottom-8 right-8 text-xs tracking-wide">
-      Letter X &mdash; theme
+    <p className="fixed bottom-8 right-8 text-[10px] tracking-wide">
+      Letter X &mdash; THEME
     </p>
   );
 }
