@@ -2,13 +2,6 @@ import Layout from "../components/Layout";
 import Badge from "../components/Badge";
 import Thumbnail from "../components/Thumbnail";
 
-//images
-import image_usability from "../public/images/3.jpg";
-import image_illustrations from "../public/images/5.jpg";
-import image_goals from "../public/images/4.jpg";
-import image_ecological from "../public/images/9.jpg";
-import image_trends from "../public/images/7.jpg";
-
 export default function Home({ data }) {
   return (
     <Layout title="Inspiration, Creativity, Design">
