@@ -16,9 +16,9 @@ export default function Navbar() {
           BadgeText="NEW"
           BadgeClasses="bg-blue-600 dark:bg-blue-600"
         />
-        <ListItem LinkText="About us" LinkURL="/about" />
+        <ListItem LinkText="About me" LinkURL="/about" />
         <ListItem LinkText="FAQ" />
-        <ListItem LinkText="Github" BadgeText="21" />
+        <ListItem LinkText="GitHub" BadgeText="21" />
       </ul>
       <div className="flex-1 flex justify-end pr-5">
         <CTA />
@@ -33,7 +33,7 @@ export const Logo = () => {
     <Link href="/">
       <a className="inline-block transform translate-y-[2px]">
         <p className="text-xl font-extrabold tracking-wide">MAYURA</p>
-        <p className="text-gray-900 dark:text-gray-300 text-[0.50rem] tracking-[0.42em] mt-[-3px]">
+        <p className="text-gray-900 dark:text-gray-300 text-[0.50rem] tracking-[0.44em] mt-[-3px]">
           RAMANAYAKA
         </p>
       </a>
