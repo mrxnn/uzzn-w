@@ -14,6 +14,7 @@ export default function Home({ posts }) {
     })
     .map((post) => {
       return {
+        id: post.id,
         category: post.properties.Category.rich_text[0].plain_text,
         position: post.properties.Position.number,
         imageURL: post.properties.Thumbnail.files[0].file.url,
