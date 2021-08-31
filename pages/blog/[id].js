@@ -119,7 +119,7 @@ export default function Post({ page, blocks }) {
             objectFit="cover"
           />
         </header>
-        <section className="prose mx-auto max-w-3xl mt-14 mb-20">
+        <section className="prose dark:prose-light mx-auto max-w-3xl mt-14 mb-20">
           {blocks.map((block) => (
             <div key={block.id}>{renderBlock(block)}</div>
           ))}
